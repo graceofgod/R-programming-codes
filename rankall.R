@@ -1,11 +1,7 @@
-##The rankall.R file creates a function called rankall that takes two arguments: an outcome name (outcome) and a hospital ranking (num).
-##The function reads the outcome-of-care-measures.csv ﬁle and returns a 2-column data frame containing the hospital 
-#in each state that has the ranking speciﬁed in num.
-##The outcome name needs to be one of heart attack, heart failure, or pneumonia
-
-##The num argument can take values best, worst, or an integer indicating the ranking (smaller numbers are better). 
-##If the number given by num is larger than the number of hospitals in that state, then the function should return NA. 
-
+##The rankall.R file creates a function called rankall that takes two arguments: an outcome name and a hospital ranking. 
+##The rankall function reads the outcome-of-care-measures.csv ﬁle and returns a data frame that shows each state and 
+##its corresponding hospital at a specified rank. The outcome name needs to be one of heart attack, heart failure, or pneumonia.
+##The num argument can be best, worst, or an integer indicating the ranking. 
 ## Examples
 ##source("rankall.R")
 ##head(rankall("heart attack", 20))
