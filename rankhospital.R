@@ -1,10 +1,8 @@
 
-##The rankhospital.R file creates a function called rankhospital that takes three arguments: the 2-character abbreviated name of a state (state), an outcome (outcome), and the ranking of a hospital in that state for that outcome (num). 
-#The function reads the outcome-of-care-measures.csv ﬁle and returns a character vector with the name of the hospital that has the ranking speciﬁed by the num argument. 
-##The outcome name needs to be one of heart attack, heart failure, or pneumonia
-
-##The num argument can take values best, worst, or an integer indicating the ranking (smaller numbers are better). 
-##If the number given by num is larger than the number of hospitals in that state, then the function should return NA. 
+##This file creates a function called rankhospital that takes three arguments: a state name, an outcome name, 
+##and the ranking of a hospital in a speciﬁed state for a speciﬁed outcome. 
+##The rankhospital function reads the outcome-of-care-measures.csv ﬁle and returns the hospital name at a specified rank 
+##in a specified state. The num argument can be best, worst, or an integer indicating the ranking. 
 
 ## Examples
 ## source("rankhospital.R")  
