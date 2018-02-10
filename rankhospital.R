@@ -44,7 +44,7 @@ rankhospital <- function(state, outcome, num="best") {
   sorted_hospitals <- na.omit(sorted_hospitals) 
   sorted_hospitals <- sorted_hospitals[, 2] #get a sorted hospital name starting with the lowest value of the outcome column
   
-  num <- ifelse(num == "best", 1, ifelse(num == "worst", nrow(sorted_hospitals), as.numeric(num)))
+  num <- ifelse(num == "best", 1, ifelse(num == "worst", length(sorted_hospitals), as.numeric(num)))
   #Get hospital name for the given rank by its 30-day mortality rate.
   sorted_hospitals[num]
 }
