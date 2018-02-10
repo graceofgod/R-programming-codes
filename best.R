@@ -1,12 +1,8 @@
 
-#The best.R file creates a function called best.
-#The best function takes two arguments: the 2-character abbreviated name of a state and an outcome name. 
-#The outcome name needs to be one of "heart attack", "heart failure", or "pneumonia"
-
-#The best function reads the outcome-of-care-measures.csv ???le and returns the name of the hospital that 
-#has the best (i.e. lowest) 30-day mortality for the speci???ed outcome in that state.
-#The hospital name is the name provided in the Hospital.Name variable.
-#Hospitals that do not have data on a particular outcome will be excluded from the set of hospitals when deciding the rankings.
+#The best.R file creates a function called best. The best function takes two arguments: a state name and an outcome name. 
+#The outcome name needs to be one of “heart attack”, “heart failure”, or “pneumonia”. 
+#The best function reads the outcome-of-care-measures.csv ﬁle and returns the hospital name with the best 
+#(i.e. lowest) 30-day mortality rate for a speciﬁed outcome in a specified state.
 
 # Examples:
 # best("TX", "heart attack")
